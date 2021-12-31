@@ -12,3 +12,8 @@ puts "----------"
 puts @store1.name
 puts @store2.name
 
+@store1.name = 'Hijabiana'
+@store1.save
+
+puts @store1.name
+puts @store2.name
