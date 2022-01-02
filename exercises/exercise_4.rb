@@ -28,4 +28,11 @@ store = Store.create(
   )
 
 #prints out the number of rows inside the table 'Store'  
-puts Store.all.count
+puts "So far the total number of stores are ----> #{Store.all.count}" 
+
+@mens_stores = Store.where("mens_apparel = 't'")
+
+@mens_stores.each do |s|
+  puts s.name
+  puts s.annual_revenue
+end
