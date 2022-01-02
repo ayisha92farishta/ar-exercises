@@ -21,6 +21,7 @@ puts "----------"
 
 @one_mil = Store.where("annual_revenue > ?", 1000000)
 
+#loops over the one_mil instance variable
 @num = 0
 @one_mil.each do |s|  
   @num += 1
